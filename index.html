@@ -7,12 +7,12 @@
     <title>PicoCamp Website</title>
 
     <!-- font awesome cdn link  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
-    <!-- custom css file link  -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Link do css -->
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 <body>
@@ -25,12 +25,13 @@
 
     <nav class="navbar">
         <div id="nav-close" class="fas fa-times"></div>
-        <a href="#home">home</a>
-        <a href="#about">about</a>
-        <a href="#shop">shop</a>
-        <a href="#packages">packages</a>
-        <a href="#reviews">reviews</a>
-        <a href="#blogs">blogs</a>
+        <a href="#home">Inicio</a>
+        <a href="#about">Sobre</a>
+        <a href="#shop">Loja</a>
+        <a href="#aluguer"> Aluguer</a>
+        <a href="#packages">Pacotes</a>
+        <!--a href="#reviews">reviews</a-->
+        <a href="#blogs">Contacto</a>
     </nav>
 
     <div class="icons">
@@ -45,7 +46,7 @@
 
 <!-- search form  -->
 
-<div class="search-form">
+<!--div class="search-form">
 
     <div id="close-search" class="fas fa-times"></div>
 
@@ -53,7 +54,7 @@
         <input type="search" name="" placeholder="search here..." id="search-box">
         <label for="search-box" class="fas fa-search"></label>
     </form>
-</div>
+</div -->
 
 <!-- home section starts  -->
 
@@ -107,6 +108,25 @@
 
 <!-- home section ends -->
 
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+    <div class="image">
+        <img src="images/about-img.jpg" alt="">
+    </div>
+
+    <div class="content">
+        <h3>memorable outdoor experiences</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque voluptates corrupti natus necessitatibus beatae voluptatibus, deserunt quo soluta minima libero laborum, corporis error esse vitae placeat blanditiis reiciendis vel? Minima.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta doloremque placeat porro, ipsam quia at beatae atque odit iste?</p>
+        <a href="#" class="btn">read more</a>
+    </div>
+
+</section>
+
+<!-- about section ends -->
+
 <!-- category section starts  -->
 
 <section class="category">
@@ -149,26 +169,7 @@
 
 <!-- category section ends -->
 
-<!-- about section starts  -->
-
-<section class="about" id="about">
-
-    <div class="image">
-        <img src="images/about-img.jpg" alt="">
-    </div>
-
-    <div class="content">
-        <h3>memorable outdoor experiences</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque voluptates corrupti natus necessitatibus beatae voluptatibus, deserunt quo soluta minima libero laborum, corporis error esse vitae placeat blanditiis reiciendis vel? Minima.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident dicta doloremque placeat porro, ipsam quia at beatae atque odit iste?</p>
-        <a href="#" class="btn">read more</a>
-    </div>
-
-</section>
-
-<!-- about section ends -->
-
-<!-- shop section starts  -->
+ <!-- shop section starts  -->
 
 <section class="shop" id="shop">
 
@@ -720,8 +721,10 @@
 
 
 
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> --> 
 
 <!-- custom js file link  -->
 <script src="js/script.js"></script>
