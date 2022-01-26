@@ -1,0 +1,23 @@
+{
+  "name": "picocampweb",
+  "version": "1.0.0",
+  "description": "Trabalho de PAP",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mplima08/picocampweb.git"
+  },
+  "author": "Miguel Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mplima08/picocampweb/issues"
+  },
+  "homepage": "https://github.com/mplima08/picocampweb#readme",
+  "dependencies": {
+    "express": "^4.17.2",
+    "nodemon": "^2.0.15"
+  }
+}
