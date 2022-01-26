@@ -47,6 +47,7 @@ section {
   padding: 1rem 3rem;
 }
 
+
 .btn:hover {
   background: #10221b;
   color: #fff;
@@ -60,7 +61,7 @@ section {
 }
 
 .header {
-  position: fixed;
+
   top: 0;
   left: 0;
   right: 0;
@@ -88,7 +89,7 @@ section {
 }
 
 .header .logo i {
-  color: #219150;
+  color: #6e9121;
 }
 
 .header .navbar a {
@@ -740,7 +741,7 @@ section {
 }
 
 .footer .box-container .box a:hover {
-  color: #219150;
+  color: #917d21;
 }
 
 .footer .box-container .box a:hover i {
