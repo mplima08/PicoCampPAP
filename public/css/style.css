@@ -601,12 +601,12 @@ section {
   font-size: 1.5rem;
 }
 
-.blogs .slide {
+.contacto .slide {
   text-align: center;
   padding: 2rem;
 }
 
-.blogs .slide img {
+.contacto .slide img {
   height: 25rem;
   width: 100%;
   -o-object-fit: cover;
@@ -614,7 +614,7 @@ section {
   border-radius: .5rem;
 }
 
-.blogs .slide .icons {
+.contacto .slide .icons {
   background: #10221b;
   border-radius: .5rem;
   padding: 1rem;
@@ -623,27 +623,27 @@ section {
   display: inline-block;
 }
 
-.blogs .slide .icons a {
+.contacto .slide .icons a {
   font-size: 1.4rem;
   color: #fff;
   margin: 0 1rem;
 }
 
-.blogs .slide .icons a:hover {
+.contacto .slide .icons a:hover {
   color: #219150;
 }
 
-.blogs .slide .icons a i {
+.contacto .slide .icons a i {
   padding-right: .5rem;
   color: #219150;
 }
 
-.blogs .slide h3 {
+.contacto .slide h3 {
   font-size: 2rem;
   color: #10221b;
 }
 
-.blogs .slide p {
+.contacto .slide p {
   font-size: 1.4rem;
   padding: 1rem 0;
   line-height: 2;
