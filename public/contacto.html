@@ -4,44 +4,96 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto</title>
+    <title>PicoCamp Website</title>
+    <link rel="icon" type="image/x-icon" href="images/PicoCampLOGO.png"> 
 
-    <!-- font awesome cdn link  -->
+    <!--  Link da font awesome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- Link do css -->
-    <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="css/contacto.css">
 
 </head>
 <body>
 
     <header class="header">
 
-        <a href="#" class="logo"></i> PicoCamp </a>
+        <a href="index.html" class="logo"></i> PicoCamp </a>
     
         <nav class="navbar">
             <div id="nav-close" class="fas fa-times"></div>
             <a href="index.html">Inicio </a>
             <a href="sobre.html">Sobre</a>
-            <a href="#shop">Loja</a>
+            <!--a href="#shop">Loja</a-->
             <a href="#aluguer"> Aluguer</a>
             <a href="#packages">Pacotes</a>
             <!--a href="#reviews">reviews</a-->
             <a href="contacto.html">Contacto</a>
         </nav>
-    
-        <div class="icons">
-            <div id="menu-btn" class="fas fa-bars"></div>
-            <a href="#" class="fas fa-shopping-cart"></a>
-            <div id="search-btn" class="fas fa-search"></div>
-        </div>
-    
+        
     </header>
 
+    <div class="container">
+		<div class="contact-box">
+			<div class="left"> <!--img src="images/home-bg-3.jpg" alt="Italian Trulli" style=""--> </div>
+            <form action="https://formsubmit.co/mplima08@hotmail.com" method="post"> 
+			<div class="right">
+				<h2>Dê-nos a sua opinião</h2>
+				<input type="text" name="name"   class="field" placeholder="Nome Completo" required>
+				<input type="text" name="email" class="field" placeholder="Email" required>
+				<input type="text" name="telemovel" class="field" placeholder="Telefone" required>
+				<textarea placeholder="Mensagem" class="input-itemtexarea" name="messagem" id="menssagem" ></textarea>
+				<button type="submit" value="send" class="submit">Send</button>
+			</div>
+        </form>
+		</div>
+	</div>
+
+    <section class="footer">
+
+        <div class="box-container">
+    
+            <div class="box">
+                <h3>Hiperligações</h3>
+                <a href="index.html">Inicio</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="#shop">Loja</a>
+                <a href="#aluguer"> Aluguer</a>
+                <a href="#packages">Pacotes</a>
+                <a href="contacto.html">Contacto</a>
+            </div>
+    
+            <!--div class="box">
+                <h3>extra links</h3>
+                <a href="#">my account</a>
+                <a href="#">my order</a>
+                <a href="#">my wishlist</a>
+                <a href="#">ask questions</a>
+                <a href="#">terms of use</a>
+                <a href="#">privacy policy</a>
+            </div-->
+    
+            <div class="box">
+                <h3> Contactos</h3>
+                <a href="#"> <i class="fas fa-phone"></i> +351 916866194 </a>
+                <a href="#"> <i class="fas fa-envelope"></i> picocamp@gmail.com </a>
+                <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d781.3176972815928!2d-25.61356713430124!3d37.80253332257067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb5cd462cf9d841d%3A0x2d2367e5222cd000!2sM513%2014%2C%20Pico%20da%20Pedra!5e0!3m2!1spt-PT!2spt!4v1643803894316!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"><i class="fas fa-map"></i> mumbai, india - 400104 </a>
+                
+            </div>
+    
+            <div class="box">
+                <h3>Siga-nos</h3>
+                <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
+                <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+                <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+    
+            </div>
+    
+        </div>
+    
+    </section>
 
     
 </body>
