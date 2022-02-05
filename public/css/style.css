@@ -245,28 +245,23 @@ section {
 
 .home .box .content span {
   font-size: 4rem;
-  color: #10221b;
+  color: #00ff9d;
 }
 
 .home .box .content h3 {
   font-size: 6rem;
-  color: #219150;
+  color: #ffffff;
   padding-top: .5rem;
   text-transform: uppercase;
 }
 
 .home .box .content p {
   line-height: 2;
-  color: #10221b;
+  color: #ffffff;
   font-size: 1.5rem;
   padding: 1rem 0;
 }
 
-.swiper-button-next::after,
-.swiper-button-prev::after {
-  font-size: 3rem;
-  color: #10221b;
-}
 
 .category .box-container {
   display: -ms-grid;
