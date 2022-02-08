@@ -76,7 +76,7 @@ section {
 }
 
 .header.active {
-  background: #fff;
+  background: rgb(255, 255, 255);
   -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
@@ -85,12 +85,12 @@ section {
 .header .logo {
   margin-right: auto;
   font-size: 2.5rem;
-  color: #10221b;
+  color: #000000;
   font-weight: bolder;
 }
 
 .header .logo i {
-  color: #6e9121;
+  color: #a1804c;
 }
 
 .header .navbar a {
@@ -100,7 +100,7 @@ section {
 }
 
 .header .navbar a:hover {
-  color: #a1804c;
+  color: #000000;
 }
 
 .header .navbar #nav-close {
@@ -241,8 +241,8 @@ textarea{
 	}
 }
 .footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/viajando-de-barraca-acampando-no-frio-940x419.jpg) no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/viajando-de-barraca-acampando-no-frio-940x419.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bgedit.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bgedit.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -270,7 +270,7 @@ textarea{
 }
 
 .footer .box-container .box a i {
-  color: #219150;
+  color: #917d21;
   padding-right: .5rem;
 }
 
@@ -289,4 +289,60 @@ textarea{
   padding-top: 2.5rem;
   font-size: 2rem;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  .header #menu-btn {
+    display: inline-block;
+  }
+  .header .navbar {
+    position: fixed;
+    top: 0;
+    left: -110%;
+    background: #fff;
+    z-index: 10000;
+    width: 35rem;
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column;
+            flex-flow: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header .navbar.active {
+    left: 0;
+    -webkit-box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
+  }
+  .header .navbar a {
+    margin: 1rem 0;
+    font-size: 3rem;
+  }
+  .header .navbar #nav-close {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+  }
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    font-size: 3rem;
+  }
 }

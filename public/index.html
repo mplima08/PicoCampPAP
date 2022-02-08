@@ -22,17 +22,20 @@
 
 <header class="header">
 
-    <a href="index.html" class="logo"></i> PicoCamp </a>
+    <a href="index.html" class="logo"><i class="fas fa-campground"></i> PicoCamp </a>
 
     <nav class="navbar">
         <div id="nav-close" class="fas fa-times"></div>
         <a href="index.html">Inicio</a>
         <a href="sobre.html">Sobre</a>
-        <a href="#shop">Loja</a>
+        <a href="loja.html">Loja</a>
         <a href="#aluguer"> Aluguer</a>
         <a href="pacotes.html">Pacotes</a>
         <!--a href="#reviews">reviews</a-->
         <a href="contacto.html">Contacto</a>
+        <a href=""> <i class="fas fa-globe-europe"></i> </a>
+
+        </div>
     </nav>
 
     <div class="icons">
@@ -47,7 +50,7 @@
 
 <!-- search form  -->
 
-<!--div class="search-form">
+<div class="search-form">
 
     <div id="close-search" class="fas fa-times"></div>
 
@@ -56,6 +59,20 @@
         <label for="search-box" class="fas fa-search"></label>
     </form>
 </div -->
+
+
+
+  <script type="text/javascript">
+  var counter = 1;
+  setInterval(function(){
+    document.getElementById('content' + counter).checked = true;
+    counter++;
+    if(counter > 4){
+      counter = 1;
+    }
+  }, 5000);
+  </script>
+
 
 <!-- home section starts  -->
 
@@ -66,7 +83,7 @@
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
-                <div class="box" style="background: url(./images/camping-iniciante-capa.jpg) ;">
+                <div class="box" style="background: url(./images/christopher-jolly-gcCcIy6Fc_M-unsplash.jpg) ;">
                     <div class="content">
                         <span>never stop</span>
                         <h3>exploring</h3>
@@ -76,8 +93,8 @@
                 </div>
             </div>
 
-            <!--div class="swiper-slide">
-                <div class="box second" style="background: url(images/home-bg-2.jpg) ;">
+            <div class="swiper-slide">
+                <div class="box second" style="background: url() ;">
                     <div class="content">
                         <span>make tour</span>
                         <h3>amazing</h3>
@@ -323,92 +340,6 @@
 
 <!-- shop section ends -->
 
-<!-- packages section starts  -->
-
-<section class="packages" id="packages">
-
-    <h1 class="heading">popular packages</h1>
-
-    <div class="box-container">
-
-        <div class="box">
-            <div class="image">
-                <img src="images/img-1.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>featured tour package</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
-                <div class="price">$250 - $450</div>
-                <a href="#" class="btn">explore now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/img-2.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>featured tour package</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
-                <div class="price">$250 - $450</div>
-                <a href="#" class="btn">explore now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/img-3.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>featured tour package</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
-                <div class="price">$250 - $450</div>
-                <a href="#" class="btn">explore now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/img-4.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>featured tour package</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
-                <div class="price">$250 - $450</div>
-                <a href="#" class="btn">explore now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/img-5.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>featured tour package</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
-                <div class="price">$250 - $450</div>
-                <a href="#" class="btn">explore now</a>
-            </div>
-        </div>
-
-        <div class="box">
-            <div class="image">
-                <img src="images/img-6.jpg" alt="">
-            </div>
-            <div class="content">
-                <h3>featured tour package</h3>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam, eos.</p>
-                <div class="price">$250 - $450</div>
-                <a href="#" class="btn">explore now</a>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- packages section ends -->
-
 <!-- reviews section starts  -->
 
 <section class="reviews" id="reviews">
@@ -549,118 +480,6 @@
 
 <!-- services section ends -->
 
-<!-- blogs section starts  -->
-
-<section class="contacto" id="contacto">
-
-    <h1 class="heading"> our daily posts </h1>
-
-    <div class="swiper contacto-slider">
-
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide slide">
-                <img src="images/img-1.jpg" alt="">
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-                <h3>blog title goes here.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-
-            <div class="swiper-slide slide">
-                <img src="images/img-2.jpg" alt="">
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-                <h3>blog title goes here.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-
-            <div class="swiper-slide slide">
-                <img src="images/img-3.jpg" alt="">
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-                <h3>blog title goes here.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-
-            <div class="swiper-slide slide">
-                <img src="images/img-4.jpg" alt="">
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-                <h3>blog title goes here.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-
-            <div class="swiper-slide slide">
-                <img src="images/img-5.jpg" alt="">
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-                <h3>blog title goes here.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-
-            <div class="swiper-slide slide">
-                <img src="images/img-6.jpg" alt="">
-                <div class="icons">
-                    <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2021 </a>
-                    <a href="#"> <i class="fas fa-user"></i> by admin </a>
-                </div>
-                <h3>blog title goes here.</h3>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reprehenderit, deserunt.</p>
-                <a href="#" class="btn">read more</a>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!-- blogs section ends -->
-
-<!-- newsletter section  -->
-
-<section class="newsletter">
-
-    <div class="content">
-        <h1 class="heading">subscirbe now</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam ipsam repellat nostrum esse officiis unde quisquam corporis doloremque adipisci similique!</p>
-        <form action="">
-            <input type="email" name="" placeholder="enter your email" id="" class="email">
-            <input type="submit" value="subscirbe" class="btn">
-        </form>
-    </div>
-
-</section>
-
-<section class="clients">
-
-    <div class="swiper clients-slider">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide silde"><img src="images/client-logo-1.png" alt=""></div>
-            <div class="swiper-slide silde"><img src="images/client-logo-2.png" alt=""></div>
-            <div class="swiper-slide silde"><img src="images/client-logo-3.png" alt=""></div>
-            <div class="swiper-slide silde"><img src="images/client-logo-4.png" alt=""></div>
-        </div>
-    </div>
-
-</section>
-
 <!-- Inicio do footer -->
 
 <section class="footer">
@@ -679,19 +498,16 @@
 
         <div class="box">
             <h3>Horário</h3>
-            <a href="#">Aberto todos os dias das 08:00 até às 23:00</a>
-            <a href="#">Segunda-Domingo</a>
-            <a href="#">08:00 - 23:00</a>
-            <a href="#">ask questions</a>
-            <a href="#">terms of use</a>
-            <a href="#">privacy policy</a>
+            <a href="#"><i class="far fa-calendar-alt"></i> Segunda-Domingo</a>
+            <a href="#"><i class="far fa-calendar-alt"></i> 08:00 - 23:00</a>
+            <a href="#"><i class="far fa-calendar-alt"></i> Incluindo feriados</a>
         </div>
 
         <div class="box">
             <h3> Contactos</h3>
-            <a href="#"> <i class="fas fa-phone"></i> +351 916866194 </a>
-            <a href="#"> <i class="fas fa-envelope"></i> picocamplda@gmail.com </a>
-            <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d781.3176972815928!2d-25.61356713430124!3d37.80253332257067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb5cd462cf9d841d%3A0x2d2367e5222cd000!2sM513%2014%2C%20Pico%20da%20Pedra!5e0!3m2!1spt-PT!2spt!4v1643803894316!5m2!1spt-PT!2spt" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"><i class="fas fa-map"></i> mumbai, india - 400104 </a>
+            <a target="_blank" href="https://web.whatsapp.com/send?phone=+351916866194"> <i class="fab fa-whatsapp"></i> +351 916866194 </a>
+            <a href="mailto:picocamplda@gmail.com"> <i class="fas fa-envelope"></i> picocamplda@gmail.com </a>
+            <a target="_blank" href="https://goo.gl/maps/wjFtXWpDPVq8A5Pz5"><i class="fas fa-map-pin"></i> M513 14 Pico da Pedra </a>
             
         </div>
 
@@ -722,10 +538,10 @@
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
-<!-- <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script> --> 
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 
 <!-- custom js file link  -->
-<script src="js/script.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>

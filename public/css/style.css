@@ -89,17 +89,17 @@ section {
 }
 
 .header .logo i {
-  color: #6e9121;
+  color: #a1804c;
 }
 
 .header .navbar a {
   margin-left: 2rem;
   font-size: 1.7rem;
-  color: #10221b;
+  color: #a1804c;
 }
 
 .header .navbar a:hover {
-  color: #219150;
+  color: #000000;
 }
 
 .header .navbar #nav-close {
@@ -119,7 +119,7 @@ section {
 
 .header .icons a:hover,
 .header .icons div:hover {
-  color: #219150;
+  color: #917d21;
 }
 
 .header #menu-btn {
@@ -245,19 +245,19 @@ section {
 
 .home .box .content span {
   font-size: 4rem;
-  color: #00ff9d;
+  color: #917d21;
 }
 
 .home .box .content h3 {
   font-size: 6rem;
-  color: #ffffff;
+  color: #917d21;
   padding-top: .5rem;
   text-transform: uppercase;
 }
 
 .home .box .content p {
   line-height: 2;
-  color: #ffffff;
+  color: #917d21;
   font-size: 1.5rem;
   padding: 1rem 0;
 }
@@ -410,81 +410,6 @@ section {
   color: #10221b;
 }
 
-.packages {
-  background: #eee;
-}
-
-.packages .box-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(32rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
-  gap: 1.5rem;
-}
-
-.packages .box-container .box {
-  text-align: center;
-  background: #fff;
-  border: 0.2rem solid #10221b;
-  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  border-radius: .5rem;
-}
-
-.packages .box-container .box:hover {
-  background: #10221b;
-}
-
-.packages .box-container .box:hover .content > * {
-  color: #fff;
-}
-
-.packages .box-container .box:hover .btn {
-  border-color: #fff;
-}
-
-.packages .box-container .box:hover .btn:hover {
-  background: #fff;
-  color: #10221b;
-}
-
-.packages .box-container .box .image {
-  height: 25rem;
-  overflow: hidden;
-  padding: 2rem;
-  padding-bottom: 0;
-  border-radius: .5rem;
-}
-
-.packages .box-container .box .image img {
-  height: 100%;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: .5rem;
-}
-
-.packages .box-container .box .content {
-  padding: 2rem;
-}
-
-.packages .box-container .box .content h3 {
-  font-size: 2rem;
-  color: #10221b;
-}
-
-.packages .box-container .box .content p {
-  font-size: 1.5rem;
-  color: #10221b;
-  padding: 1rem 0;
-  line-height: 2;
-}
-
-.packages .box-container .box .content .price {
-  font-size: 2rem;
-  color: #219150;
-}
-
 .services {
   background: #eee;
 }
@@ -596,54 +521,6 @@ section {
   font-size: 1.5rem;
 }
 
-.contacto .slide {
-  text-align: center;
-  padding: 2rem;
-}
-
-.contacto .slide img {
-  height: 25rem;
-  width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: .5rem;
-}
-
-.contacto .slide .icons {
-  background: #10221b;
-  border-radius: .5rem;
-  padding: 1rem;
-  position: relative;
-  top: -2rem;
-  display: inline-block;
-}
-
-.contacto .slide .icons a {
-  font-size: 1.4rem;
-  color: #fff;
-  margin: 0 1rem;
-}
-
-.contacto .slide .icons a:hover {
-  color: #219150;
-}
-
-.contacto .slide .icons a i {
-  padding-right: .5rem;
-  color: #219150;
-}
-
-.contacto .slide h3 {
-  font-size: 2rem;
-  color: #10221b;
-}
-
-.contacto .slide p {
-  font-size: 1.4rem;
-  padding: 1rem 0;
-  line-height: 2;
-  color: #10221b;
-}
 
 .newsletter {
   background: #eee;
@@ -700,9 +577,9 @@ section {
 .clients .silde img {
   height: 12rem;
 }
-
+/*Footer*/
 .footer {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 3, 3, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bg.jpg) no-repeat;
   background-size: cover;
   background-position: center;
@@ -731,7 +608,7 @@ section {
 }
 
 .footer .box-container .box a i {
-  color: #219150;
+  color: #917d21;
   padding-right: .5rem;
 }
 
@@ -751,6 +628,8 @@ section {
   font-size: 2rem;
   color: #fff;
 }
+
+/*Footer*/
 
 
 @media (max-width: 1200px) {
