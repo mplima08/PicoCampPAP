@@ -8,7 +8,6 @@
   outline: none;
   border: none;
   text-decoration: none;
-  text-transform: capitalize;
   -webkit-transition: .2s linear;
   transition: .2s linear;
 }
@@ -50,7 +49,7 @@ section {
 
 .btn:hover {
   background: #10221b;
-  color: rgb(255, 255, 255);
+  color: rgb(26, 255, 0);
 }
 
 .heading {
@@ -328,16 +327,21 @@ section {
           flex: 1 1 42rem;
 }
 
+.about .content h2 {
+  font-size: 2rem; 
+  color: #000000;
+}
 .about .content h3 {
   font-size: 3rem;
-  color: #219150;
+  color: #a1804c;
 }
 
 .about .content p {
   font-size: 1.5rem;
-  color: #10221b;
+  color: #000000;
   padding: 1rem 0;
   line-height: 2;
+  text-transform: none;
 }
 
 .shop .slide {

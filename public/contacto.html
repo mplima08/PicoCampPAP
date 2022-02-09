@@ -27,11 +27,12 @@
             <div id="nav-close" class="fas fa-times"></div>
             <a href="index.html">Inicio </a>
             <a href="sobre.html">Sobre</a>
-            <!--a href="#shop">Loja</a-->
+            <a href="loja.html">Loja</a>
             <a href="#aluguer"> Aluguer</a>
             <a href="pacotes.html">Pacotes</a>
             <!--a href="#reviews">reviews</a-->
             <a href="contacto.html">Contacto</a>
+            <a href=""> <i class="fas fa-globe-europe"></i> </a>
         </nav>
 
         <div class="icons">
@@ -45,19 +46,25 @@
     <div class="container">
 		<div class="contact-box">
 			<div class="left"> </div>
-            <form action="https://formsubmit.co/picocamplda@gmail.com" method="post"> 
+            <form action="https://formsubmit.co/picocamplda@gmail.com" method="post" name="form"> 
 			<div class="right">
 				<h2>Dê-nos a sua opinião</h2>
                 <h3>Visto que ainda está em construção, diga-nos o que gostaria de ver no nosso parque.</h3>
                 <input type="hidden" name="_template" value="table"> <!--Textura do email-->
-				<input type="text" name="Nome Completo"   class="field" placeholder="Nome Completo" required>
+				<input type="text" name="Nome Completo"   class="field" placeholder="Nome Completo" id="contact-name" onkeyup="validateName()" required>
+                <span id="nome-erro"></span>
 				<input type="text" name="Email" class="field" placeholder="Email" required>
+                <span id="email-erro"></span>
 				<input type="text" name="Contacto" class="field" placeholder="Telefone" required>
+                <span id="numero-erro"></span>
 				<textarea placeholder="Mensagem" class="input-itemtexarea" name="Mensagem" id="menssagem" ></textarea>
+                <span id="mensagem-erro"> </span>
 				<button type="submit" value="send" class="submit">Enviar</button>
+                <span id="submit-erro"> </span>
 			</div>
         </form>
 		</div>
+        <script src="script.js"></script>
 	</div>
 
     <section class="footer">

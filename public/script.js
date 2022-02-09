@@ -131,3 +131,26 @@ var swiper = new Swiper(".clients-slider", {
         },
     },
 });
+
+/* Script para validação */
+var nomeerro = document.getElementById('nome-erro')
+var numeroerro = document.getElementById('numero-erro')
+var emailerro = document.getElementById('email-erro')
+var mensagemerro = document.getElementById('mensagem-erro')
+var submiterro = document.getElementById('submit-erro')
+
+function validateName() {
+  var nome = document.getElementById('contact-name').value;
+
+  if(nome.legth ==0){
+    nomeerro.innerHTML = "Coloque o nome";
+    return false;
+  }
+
+  if(!nome.match(/^[A-Za-z]*\s{1}[A-Za-z]*&/)){
+    nomeerro.innerHTML = "Escreva o Nome Completo"
+    return false;
+  }
+  nomeerro.innerHTML = 'valido';
+  return true;
+}
