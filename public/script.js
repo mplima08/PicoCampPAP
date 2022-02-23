@@ -36,121 +36,85 @@ window.onload = () =>{
     }
 };
 
+/* Script GALERIA*/
 
-var swiper = new Swiper(".home-slider", {
-    loop:true, 
-    grabCursor:true,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+let sideMenu = document.querySelector('#side-menu');
+let sideBar = document.querySelector('.side-bar');
+
+sideMenu.onclick = () =>{
+   sideMenu.classList.toggle('fa-times');
+   sideBar.classList.toggle('active');
+};
+
+let galleryImages = document.querySelectorAll('.image-container img');
+let imagePop = document.querySelector('.image-popup');
+
+galleryImages.forEach(img =>{
+   img.onclick = () =>{
+      let imageSrc = img.getAttribute('src');
+      imagePop.style.display = 'flex';
+      imagePop.querySelector('img').src = imageSrc;
+   };
 });
 
-var swiper = new Swiper(".product-slider", {
-    loop:true, 
-    grabCursor:true,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        640: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-    },
+imagePop.onclick = () =>{
+   imagePop.style.display = 'none';
+};
+
+document.querySelector('#search-box').oninput = () =>{
+   var value = document.querySelector('#search-box').value.toLowerCase();
+   galleryImages.forEach(img =>{
+      var filter = img.getAttribute('data-search').toLowerCase();
+      if(filter.indexOf(value) > -1){
+         img.style.display = 'block';
+      }else{
+         img.style.display = 'none';
+      };
+   });
+};
+
+let categoryBtn = document.querySelectorAll('.category .btn');
+
+categoryBtn.forEach(btn =>{
+   btn.onclick = () =>{
+      categoryBtn.forEach(remove => remove.classList.remove('active'));
+      let dataCategory = btn.getAttribute('data-category');
+      galleryImages.forEach(img =>{
+         var imgCat = img.getAttribute('data-cat');
+         if(dataCategory == 'all'){
+            img.style.display = 'block';
+         }else if(dataCategory == imgCat){
+            img.style.display = 'block';
+         }else{
+            img.style.display = 'none';
+         }
+      });
+      btn.classList.add('active');
+   };
 });
 
-var swiper = new Swiper(".review-slider", {
-    loop:true, 
-    grabCursor:true,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        640: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-    },
+let typeBtn = document.querySelectorAll('.type .btn');
+
+typeBtn.forEach(btn =>{
+   btn.onclick = () =>{
+      typeBtn.forEach(remove => remove.classList.remove('active'));
+      let datatype = btn.getAttribute('data-type');
+      galleryImages.forEach(img =>{
+         var imgtype = img.getAttribute('src').split('.').pop();
+         if(datatype == 'all'){
+            img.style.display = 'block';
+         }else if(datatype == imgtype){
+            img.style.display = 'block';
+         }else{
+            img.style.display = 'none';
+         }
+      });
+      btn.classList.add('active');
+   };
 });
 
-var swiper = new Swiper(".blogs-slider", {
-    loop:true, 
-    grabCursor:true,
-    spaceBetween: 10,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        768: {
-          slidesPerView: 2,
-        },
-        991: {
-          slidesPerView: 3,
-        },
-    },
-});
+document.querySelector('.reset-btn .btn').onclick = () =>{
+   window.location.reload();
+};
 
-var swiper = new Swiper(".clients-slider", {
-    loop:true, 
-    grabCursor:true,
-    spaceBetween: 20,
-    breakpoints: {
-        0: {
-          slidesPerView: 1,
-        },
-        640: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
-    },
-});
-
-/* Script para validação */
-var nomeerro = document.getElementById('nome-erro')
-var numeroerro = document.getElementById('numero-erro')
-var emailerro = document.getElementById('email-erro')
-var mensagemerro = document.getElementById('mensagem-erro')
-var submiterro = document.getElementById('submit-erro')
-
-function validateName() {
-  var nome = document.getElementById('contact-name').value;
-
-  if(nome.legth ==0){
-    nomeerro.innerHTML = "Coloque o nome";
-    return false;
-  }
-
-  if(!nome.match(/^[A-Za-z]*\s{1}[A-Za-z]*&/)){
-    nomeerro.innerHTML = "Escreva o Nome Completo"
-    return false;
-  }
-  nomeerro.innerHTML = 'valido';
-  return true;
-}
+/* Script GALERIA*/

@@ -41,7 +41,7 @@ section {
   border: 0.2rem solid #10221b;
   color: #10221b;
   cursor: pointer;
-  background: none;
+  background: white;
   font-size: 1.7rem;
   padding: 1rem 3rem;
 }
@@ -49,7 +49,7 @@ section {
 
 .btn:hover {
   background: #10221b;
-  color: rgb(26, 255, 0);
+  color: rgb(72, 0, 253);
 }
 
 .heading {
@@ -125,6 +125,7 @@ section {
   display: none;
 }
 
+/*
 .search-form {
   position: fixed;
   top: 0;
@@ -210,7 +211,7 @@ section {
 
 .search-form form label:hover {
   color: #219150;
-}
+}*/
 
 .home {
   padding: 0;
@@ -585,11 +586,12 @@ section {
 /*Faqs -------------------------------------------------------------*/
 
 body{
-  background: #ddd;
+  background: rgb(255, 255, 255);
 }
 
 .container{
-  margin:20px auto;
+  background-color: #ddd;
+  margin:100px auto;
   max-width: 700px;
 }
 
@@ -610,7 +612,7 @@ body{
 }
 
 .container .accordion-container .accordion.active .accordion-heading{
-  background: crimson;
+  background: #887a3f;
 }
 
 .container .accordion-container .accordion.active .accordion-heading h3{
@@ -632,7 +634,7 @@ body{
   align-items: center;
   justify-content: space-between;
   gap:10px;
-  background: #fff;
+  background: #887a3f;
   border:2px solid #000;
   padding:15px 20px;
 }
@@ -700,15 +702,6 @@ body{
 
 .footer .box-container .box a:hover i {
   padding-right: 2rem;
-}
-
-.footer .credit {
-  text-align: center;
-  margin-top: 2.5rem;
-  padding: 1rem;
-  padding-top: 2.5rem;
-  font-size: 2rem;
-  color: #fff;
 }
 
 /*Footer*/
