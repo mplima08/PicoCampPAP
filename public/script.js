@@ -38,15 +38,12 @@ window.onload = () =>{
 
 /* Script GALERIA*/
 
-let sideMenu = document.querySelector('#side-menu');
-let sideBar = document.querySelector('.side-bar');
-
 sideMenu.onclick = () =>{
    sideMenu.classList.toggle('fa-times');
    sideBar.classList.toggle('active');
 };
 
-let galleryImages = document.querySelectorAll('.image-container img');
+let galleryImages = document.querySelectorAll('.image-container');
 let imagePop = document.querySelector('.image-popup');
 
 galleryImages.forEach(img =>{
@@ -59,18 +56,6 @@ galleryImages.forEach(img =>{
 
 imagePop.onclick = () =>{
    imagePop.style.display = 'none';
-};
-
-document.querySelector('#search-box').oninput = () =>{
-   var value = document.querySelector('#search-box').value.toLowerCase();
-   galleryImages.forEach(img =>{
-      var filter = img.getAttribute('data-search').toLowerCase();
-      if(filter.indexOf(value) > -1){
-         img.style.display = 'block';
-      }else{
-         img.style.display = 'none';
-      };
-   });
 };
 
 let categoryBtn = document.querySelectorAll('.category .btn');
