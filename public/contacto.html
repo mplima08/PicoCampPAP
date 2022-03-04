@@ -48,20 +48,22 @@
     <div class="container">
 		<div class="contact-box">
 			<div class="left"> </div>
-            <form action="https://formsubmit.co/picocamplda@gmail.com" method="post" name="form"> 
+            <form> 
 			<div class="right">
 				<h2>Dê-nos a sua opinião</h2>
                 <h3>Visto que ainda está em construção, diga-nos o que gostaria de ver no nosso parque.</h3>
                 <input type="hidden" name="_template" value="table"> <!--Textura do email-->
-				<input type="text" name="Nome Completo"   class="field" placeholder="Nome Completo" id="contact-name" onkeyup="validateName()" required>
+				<input type="text" name="Primeiro Nome"   class="field" placeholder="Primeiro Nome" id="contact-PrimNome" required>
                 <span id="nome-erro"></span>
-				<input type="text" name="Email" class="field" placeholder="Email" required>
+                <input type="text" name="Ultimo Nome"   class="field" placeholder="Ultimo Nome" id="contact-UltNome" required>
+                <span id="nome-erro"></span>
+				<input type="text" name="Email" class="field" placeholder="Email" id="contact-email" required>
                 <span id="email-erro"></span>
-				<input type="text" name="Contacto" class="field" placeholder="Telefone" required>
+				<input type="text" name="Contacto" class="field" placeholder="Telefone" id="contact-telem" required>
                 <span id="numero-erro"></span>
-				<textarea placeholder="Mensagem" class="input-itemtexarea" name="Mensagem" id="menssagem" ></textarea>
+				<textarea placeholder="Mensagem" class="input-itemtexarea" name="Mensagem" id="contact-menssagem" required></textarea>
                 <span id="mensagem-erro"> </span>
-				<button type="submit" value="send" class="submit">Enviar</button>
+				<button  value="send" class="submit" onclick="enviarContactos()">Enviar</button>
                 <span id="submit-erro"> </span>
 			</div>
         </form>

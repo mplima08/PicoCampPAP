@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;1,100;1,300&display=swap");
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+html {
+    font-size: 65%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+}
+  
+html::-webkit-scrollbar {
+    width: 1rem;
+}
+  
+html::-webkit-scrollbar-track {
+    background: #fff;
+}
+  
+html::-webkit-scrollbar-thumb {
+    background: #10221b;
+}
+section {
+    padding: 5rem 9%;
+}
+
+.heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color: #10221b;
+}
+  
+.header {
+  
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem 9%;
+    z-index: 1000;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+  
+.header.active {
+    background: #fff;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+  
+.header .logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: #10221b;
+    font-weight: bolder;
+}
+  
+.header .logo i {
+    color: #a1804c;
+}
+  
+.header .navbar a {
+    margin-left: 2rem;
+    font-size: 1.7rem;
+    color: #a1804c;
+}
+  
+.header .navbar a:hover {
+    color: #000000;
+}
+  
+.header .navbar #nav-close {
+    font-size: 5rem;
+    cursor: pointer;
+    color: #10221b;
+    display: none;
+}
+  
+.header .icons a,
+.header .icons div {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: #10221b;
+}
+  
+.header .icons a:hover,
+.header .icons div:hover {
+    color: #917d21;
+}
+  
+.header #menu-btn {
+    display: none;
+}
+
+.services {
+    background: #eee;
+    filter: blur(30%);
+}
+  
+.services .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(31rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 1.5rem;
+}
+  
+.services .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    border: 0.2rem solid #10221b;
+    border-radius: .5rem;
+    background: #fff;
+}
+  
+.services .box-container .box:hover {
+    background: #917d21;
+} 
+  
+.services .box-container .box:hover p {
+    color: #fff;
+}
+  
+.services .box-container .box:hover .btn {
+    border-color: #fff;
+    color: #fff;
+}
+  
+.services .box-container .box:hover .btn:hover {
+    background: #fff;
+    color: #10221b;
+}
+  
+.services .box-container .box img {
+    height: 10rem;
+    margin-bottom: 1rem;
+}
+  
+.services .box-container .box h3 {
+    font-size: 2rem;
+    color: #10221b;
+}
+  
+.services .box-container .box p {
+    font-size: 1.5rem;
+    color: #10221b;
+    padding: 1rem 0;
+    line-height: 2;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    border: 0.2rem solid #10221b;
+    color: #10221b;
+    cursor: pointer;
+    background: none;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+}
+  
+  
+.btn:hover {
+    background: #10221b;
+    color: rgb(255, 255, 255);
+}
+
+
+
+/*Footer*/
+.footer {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(3, 3, 3, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/footer-bg.jpg) no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/footer-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  
+  .footer .box-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .footer .box-container .box h3 {
+    font-size: 2rem;
+    padding: 1.5rem 0;
+    color: #fff;
+  }
+  
+  .footer .box-container .box a {
+    display: block;
+    font-size: 1.4rem;
+    color: #fff;
+    padding: 1rem 0;
+  }
+  
+  .footer .box-container .box a i {
+    color: #917d21;
+    padding-right: .5rem;
+  }
+  
+  .footer .box-container .box a:hover {
+    color: #917d21;
+  }
+  
+  .footer .box-container .box a:hover i {
+    padding-right: 2rem;
+  }
+  
+  /*Footer*/

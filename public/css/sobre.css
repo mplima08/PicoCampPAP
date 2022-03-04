@@ -110,19 +110,19 @@ section {
 }
 /*--------------------------------------*/
 
-.galeria{
+.gallery{
     padding:0;
     text-align: center;
  }
  
- .galeria .image-container{
+ .gallery .image-container{
     gap:15px;
     columns:3 350px;
     margin-left: 100px;
     margin-right: 100px;
  }
  
- .galeria .image-container img{
+ .gallery .image-container img{
     break-inside: avoid;
     width: 100%;
     background-color: var(--white);
@@ -132,7 +132,7 @@ section {
     box-shadow: var(--box-shadow);
  }
  
- .galeria .image-container img:hover{
+ .gallery .image-container img:hover{
     transform: scale(.95);
  }
  
@@ -156,6 +156,54 @@ section {
     border:10px solid var(--white);
     background-color: var(--white);
  }
+
+ @media (max-width:1200px){
+
+    .gallery{
+       padding-left: 20px;
+    }
+ 
+    #side-menu{
+       display: block;
+    }
+ 
+    #side-menu.fa-times{
+       top:0;
+       left: 300px;
+    }
+ 
+    .side-bar{
+       left: -350px;
+    }
+ 
+    .side-bar.active{
+       box-shadow: 0 0 0 100vw var(--dark-bg);
+       left:0;
+       z-index: 1000;
+    }
+ 
+ }
+ 
+ @media (max-width:768px){
+ 
+    .image-popup img{
+       width: 100%;
+    }
+ 
+ }
+ 
+ @media (max-width:450px){
+ 
+    #side-menu.fa-times{
+       top:10px;
+       left: 10px;
+    }
+ 
+    .side-bar.active{
+       padding-top: 70px;
+    }
+ 
+ }
  
 
 /*--------------------------------------*/
@@ -174,6 +222,7 @@ section {
     text-align: justify;
 }
 
+
 .container:after{
 	content: '';
 	position: absolute;
@@ -181,7 +230,7 @@ section {
 	height: 100%;
 	left: 0;
 	top: 0;
-	background-color: #ddd;
+	background-color:  #ddd;
 	background-size: cover;
 	filter: blur(30px);
 	z-index: -1;
@@ -336,55 +385,4 @@ section {
   }
   /*Faqs*/
 
-  /*Galeria ---------------------*/
-
-  @media (max-width:1200px){
-
-    .gallery{
-       padding-left: 20px;
-    }
- 
-    #side-menu{
-       display: block;
-    }
- 
-    #side-menu.fa-times{
-       top:0;
-       left: 300px;
-    }
- 
-    .side-bar{
-       left: -350px;
-    }
- 
-    .side-bar.active{
-       box-shadow: 0 0 0 100vw var(--dark-bg);
-       left:0;
-       z-index: 1000;
-    }
- 
- }
- 
- @media (max-width:768px){
- 
-    .image-popup img{
-       width: 100%;
-    }
- 
- }
- 
- @media (max-width:450px){
- 
-    #side-menu.fa-times{
-       top:10px;
-       left: 10px;
-    }
- 
-    .side-bar.active{
-       padding-top: 70px;
-    }
- 
- }
-
-  /*Galeria ---------------------*/
   

@@ -35,23 +35,6 @@ section {
   padding: 5rem 9%;
 }
 
-.btn {
-  margin-top: 1rem;
-  display: inline-block;
-  border: 0.2rem solid #10221b;
-  color: #10221b;
-  cursor: pointer;
-  background: white;
-  font-size: 1.7rem;
-  padding: 1rem 3rem;
-}
-
-
-.btn:hover {
-  background: #10221b;
-  color: rgb(72, 0, 253);
-}
-
 .heading {
   text-align: center;
   margin-bottom: 2.5rem;
@@ -125,93 +108,6 @@ section {
   display: none;
 }
 
-/*
-.search-form {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.8);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  z-index: 10000;
-  -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
-}
-
-.search-form.active {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
-}
-
-.search-form #close-search {
-  position: absolute;
-  top: 1.5rem;
-  right: 2.5rem;
-  cursor: pointer;
-  color: #fff;
-  font-size: 6rem;
-}
-
-.search-form #close-search:hover {
-  color: #219150;
-}
-
-.search-form form {
-  width: 70rem;
-  margin: 0 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 0.2rem solid #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.search-form form input {
-  width: 100%;
-  font-size: 2rem;
-  color: #fff;
-  text-transform: none;
-  background: none;
-  padding-right: 2rem;
-}
-
-.search-form form input::-webkit-input-placeholder {
-  color: #aaa;
-}
-
-.search-form form input:-ms-input-placeholder {
-  color: #aaa;
-}
-
-.search-form form input::-ms-input-placeholder {
-  color: #aaa;
-}
-
-.search-form form input::placeholder {
-  color: #aaa;
-}
-
-.search-form form label {
-  font-size: 3rem;
-  cursor: pointer;
-  color: #fff;
-}
-
-.search-form form label:hover {
-  color: #219150;
-}*/
 
 .home {
   padding: 0;
@@ -249,9 +145,10 @@ section {
 }
 
 .home .box .content h3 {
-  font-size: 6rem;
+  background-color:antiquewhite ;
+  font-size: 4rem;
   color: #917d21;
-  padding-top: .5rem;
+  padding-top: .2rem;
   text-transform: uppercase;
 }
 
