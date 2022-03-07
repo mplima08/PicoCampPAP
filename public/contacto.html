@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="Pt-PT">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PicoCamp Website</title>
-    <link rel="icon" type="image/x-icon" href="images/PicoCampLOGO.png"> 
+    <link rel="icon" type="image/x-icon" href="images/PICOLOGO.png">
 
     <!--  Link da font awesome cdn -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- Link do css -->
     <link rel="stylesheet" href="css/contacto.css">
-    
+
 
 </head>
+
 <body>
 
     <header class="header">
 
         <a href="index.html" class="logo"><i class="fas fa-campground"></i> PicoCamp </a>
-    
+
         <nav class="navbar">
             <div id="nav-close" class="fas fa-times"></div>
             <a href="index.html">Inicio</a>
@@ -33,48 +35,48 @@
             <!--a href="#reviews">reviews</a-->
             <a href="contacto.html">Contacto</a>
             <a href="faqs.html"> <i class="fas fa-question"></i> </a>
-    
+
             </div>
         </nav>
-    
+
         <div class="icons">
             <div id="menu-btn" class="fas fa-bars"></div>
             <!--a href="#" class="fas fa-shopping-cart"></a>
             <div id="search-btn" class="fas fa-search"></div-->
         </div>
-    
+
     </header>
 
     <div class="container">
-		<div class="contact-box">
-			<div class="left"> </div>
-            <form> 
-			<div class="right">
-				<h2>Dê-nos a sua opinião</h2>
-                <h3>Visto que ainda está em construção, diga-nos o que gostaria de ver no nosso parque.</h3>
-                <input type="hidden" name="_template" value="table"> <!--Textura do email-->
-				<input type="text" name="Primeiro Nome"   class="field" placeholder="Primeiro Nome" id="contact-PrimNome" required>
-                <span id="nome-erro"></span>
-                <input type="text" name="Ultimo Nome"   class="field" placeholder="Ultimo Nome" id="contact-UltNome" required>
-                <span id="nome-erro"></span>
-				<input type="text" name="Email" class="field" placeholder="Email" id="contact-email" required>
-                <span id="email-erro"></span>
-				<input type="text" name="Contacto" class="field" placeholder="Telefone" id="contact-telem" required>
-                <span id="numero-erro"></span>
-				<textarea placeholder="Mensagem" class="input-itemtexarea" name="Mensagem" id="contact-menssagem" required></textarea>
-                <span id="mensagem-erro"> </span>
-				<button  value="send" class="submit" onclick="enviarContactos()">Enviar</button>
-                <span id="submit-erro"> </span>
-			</div>
-        </form>
-		</div>
-        <script src="script.js"></script>
-	</div>
+        <div class="contact-box">
+            <div class="left"> </div>
+            <form>
+                <div class="right">
+                    <h2>Dê-nos a sua opinião</h2>
+                    <h3>Visto que ainda está em construção, diga-nos o que gostaria de ver no nosso parque.</h3>
+                    <input type="hidden" name="_template" value="table">
+                    <!--Textura do email-->
+                    <input type="text" name="Primeiro Nome" class="field" placeholder="Primeiro Nome" id="contact-PrimNome" required>
+                    <span id="nome-erro"></span>
+                    <input type="text" name="Ultimo Nome" class="field" placeholder="Ultimo Nome" id="contact-UltNome" required>
+                    <span id="nome-erro"></span>
+                    <input type="text" name="Email" class="field" placeholder="Email" id="contact-email" required>
+                    <span id="email-erro"></span>
+                    <input type="text" name="Contacto" class="field" placeholder="Telefone" id="contact-telem" required>
+                    <span id="numero-erro"></span>
+                    <textarea placeholder="Mensagem" class="input-itemtexarea" name="Mensagem" id="contact-menssagem" required></textarea>
+                    <span id="mensagem-erro"> </span>
+                    <button value="send" class="submit" onclick="enviarContactos()">Enviar</button>
+                    <span id="submit-erro"> </span>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <section class="footer">
 
         <div class="box-container">
-    
+
             <div class="box">
                 <h3>Hiperligações</h3>
                 <a href="index.html">Inicio</a>
@@ -84,7 +86,7 @@
                 <a href="#packages">Pacotes</a>
                 <a href="contacto.html">Contacto</a>
             </div>
-    
+
             <!--div class="box">
                 <h3>extra links</h3>
                 <a href="#">my account</a>
@@ -94,28 +96,29 @@
                 <a href="#">terms of use</a>
                 <a href="#">privacy policy</a>
             </div-->
-    
+
             <div class="box">
                 <h3> Contactos</h3>
                 <a href="#"> <i class="fas fa-phone"></i> +351 916866194 </a>
                 <a href="#"> <i class="fas fa-envelope"></i> picocamplda@gmail.com </a>
                 <a target="_blank" href="https://goo.gl/maps/wjFtXWpDPVq8A5Pz5"><i class="fas fa-map-pin"></i> M513 14 Pico da Pedra </a>
-                
+
             </div>
-    
+
             <div class="box">
                 <h3>Siga-nos</h3>
                 <a href="#"> <i class="fab fa-facebook-f"></i> facebook </a>
                 <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
                 <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
-    
+
             </div>
-    
+
         </div>
-    
+
     </section>
-<!-- custom js file link  -->
-<script src="script.js"></script>
-    
+    <!-- custom js file link  -->
+    <script src="js/script.js"></script>
+
 </body>
+
 </html>
