@@ -123,7 +123,7 @@ function enviarContactos() {
         alert('Preencha todos os Campos!!')
     } else {
 
-        let data = {
+        const data = {
             PrimNome: pn,
             UltNome: un,
             Email: email,
@@ -131,9 +131,9 @@ function enviarContactos() {
             Mensagem: msg
         }
 
-        let d = JSON.stringify(data)
+        var d = JSON.stringify(data)
         console.log(d)
-        const options = {
+        var options = {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json'
@@ -142,11 +142,11 @@ function enviarContactos() {
         }
         fetch('http://localhost:4000/contactos', options)
             .then(res => res.json())
-            .then(res => alert(res.text))
+            .then(data => alert(data.text))
             .catch((err) => {
+                console.log(err)
                 console.log('Request failed', err.msg)
             });
-
     }
 
 }
