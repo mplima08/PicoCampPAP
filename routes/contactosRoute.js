@@ -4,7 +4,8 @@ const connection = require('../dbconnection')
 
 enviarContactosRoute.post('/', (req, res) => {
     console.log(req.body)
-    connection.query(
+    res.json({ msg: 'ok' })
+        /*connection.query(
         'INSERT INTO contactos (PrimNome,UltNome,Email,Telem,Mensagem) VALUES (?,?,?,?,?)', [req.body.PrimNome, req.body.UltNome, req.body.Email, req.body.Telem, req.body.Mensagem],
         (err, result) => {
             if (err) {
@@ -14,7 +15,7 @@ enviarContactosRoute.post('/', (req, res) => {
                     //envio do email
                 res.json({ text: 'Sua mensagem foi enviada com sucesso!' })
             }
-        })
+        })*/
 
 
 })

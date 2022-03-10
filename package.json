@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/mplima08/picocampweb#readme",
   "dependencies": {
+    "bootstrap": "^5.1.3",
     "dotenv": "^14.3.2",
     "express": "^4.17.2",
     "mongoose": "^6.1.8",
