@@ -110,11 +110,15 @@ section {
     display: none;
 }
 
-
 /*--------------------------------------*/
 
 .gallery {
     padding: 0;
+    text-align: center;
+}
+
+#legenda {
+    font-size: 22px;
     text-align: center;
 }
 

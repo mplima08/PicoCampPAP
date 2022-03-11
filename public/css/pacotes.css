@@ -141,7 +141,7 @@ section {
   
   .packages .box-container .box {
     text-align: center;
-    background: #fff;
+    background: #b6a458;
     border: 0.2rem solid #10221b;
     -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
             box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
@@ -149,15 +149,16 @@ section {
   }
   
   .packages .box-container .box:hover {
-    background: #10221b;
+    background: #ffffff;
   }
   
   .packages .box-container .box:hover .content > * {
-    color: #fff;
+    color: black;
   }
   
   .packages .box-container .box:hover .btn {
-    border-color: #fff;
+    border-color: #b6a458;
+    color:#b6a458 ;
   }
   
   .packages .box-container .box:hover .btn:hover {

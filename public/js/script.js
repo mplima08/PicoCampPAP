@@ -1,3 +1,63 @@
+function enviarContactos() {
+    const pn = document.getElementById('contact-PrimNome').value
+    const un = document.getElementById('contact-UltNome').value
+    const email = document.getElementById('contact-email').value
+    const telem = document.getElementById('contact-telem').value
+    const msg = document.getElementById('contact-mensagem').value
+
+    if (telem.length >= 10 && telem.lenght < 9) {
+        alert('insira um número válido')
+    } else {
+        let i = 0
+        for (i; i < telem.length; i++) {
+            let c = telem.charAt(i)
+            console.log(c)
+            if (isNaN(c)) {
+                alert('número inválido')
+                break
+            }
+        }
+        console.log(i)
+        if (i == telem.length) {
+            const telemInt = parseInt(telem)
+            console.log(telemInt)
+        }
+
+    }
+
+
+    if (pn == '' || un == '' || email == '' || msg == '' || telem == '') {
+        alert('Preencha todos os Campos!')
+    } 
+    else {
+
+        const data = {
+            PrimNome: pn,
+            UltNome: un,
+            Email: email,
+            Telem: telem,
+            Mensagem: msg
+        }
+        var d = JSON.stringify(data)
+        console.log(d)
+        var options = {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: d
+        }
+        fetch('http://localhost:4000/contactos', options)
+            .then(res => res.json())
+            .then(data => alert(data))
+            .catch((err) => {
+                console.log(err)
+            });
+
+    }
+}
+
+
 let navbar = document.querySelector('.header .navbar');
 
 document.querySelector('#menu-btn').onclick = () => {
@@ -90,60 +150,7 @@ typeBtn.forEach(btn => {
 
 /* Script GALERIA*/
 //Script da pagina contactofunction enviarContactos(){
-function enviarContactos() {
-    const pn = document.getElementById('contact-PrimNome').value
-    const un = document.getElementById('contact-UltNome').value
-    const email = document.getElementById('contact-email').value
-    const telem = document.getElementById('contact-telem').value
-    const msg = document.getElementById('contact-mensagem').value
-
-    if (telem.length >= 10 && telem.lenght < 9) {
-        alert('insira um número válido')
-    } else {
-        let i = 0
-        for (i; i < telem.length; i++) {
-            let c = telem.charAt(i)
-            console.log(c)
-            if (isNaN(c)) {
-                alert('número inválido')
-                break
-            }
-        }
-        console.log(i)
-        if (i == telem.length) {
-            const telemInt = parseInt(telem)
-            console.log(telemInt)
-        }
-
-    }
 
 
-    if (pn == '' || un == '' || email == '' || msg == '' || telem == '') {
-        alert('Preencha todos os Campos!')
-    } else {
 
-        const data = {
-            PrimNome: pn,
-            UltNome: un,
-            Email: email,
-            Telem: telem,
-            Mensagem: msg
-        }
-        var d = JSON.stringify(data)
-        console.log(d)
-        var options = {
-            method: 'POST',
-            headers: {
-                'Content-type': 'application/json'
-            },
-            body: d
-        }
-        fetch('http://localhost:4000/contactos', options)
-            .then(res => res.json())
-            .then(data => alert(data.msg))
-            .catch((err) => {
-                console.log(err)
-            });
-
-    }
-}
+/*tradutor*/ 
